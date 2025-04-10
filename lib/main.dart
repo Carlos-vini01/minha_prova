@@ -3,6 +3,7 @@ import 'package:minha_tela_de_login/ui/home_screen.dart';
 import 'package:minha_tela_de_login/ui/book.dart';
 
 void main() {
+  var book;
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     initialRoute: '/',
@@ -17,6 +18,8 @@ void main() {
 class LoginPage extends StatelessWidget {
   final TextEditingController userController = TextEditingController();
   final TextEditingController passController = TextEditingController();
+
+  LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
